@@ -1,0 +1,27 @@
+name: Zip Resource Pack
+
+on:
+  push:
+    branches:
+      - main  # run on pushes to main branch
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Zip resource pack folder
+        run: |
+          zip -r SaltyMC.zip . -x ".git/*" ".github/*" "SaltyMC.zip"
+
+      - name: Commit and push zip
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update zipped resource pack"
+          file_pattern: "SaltyMC.zip"
+          branch: main
+          # If your repo requires a personal access token, add:
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
