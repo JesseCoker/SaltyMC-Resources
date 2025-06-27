@@ -23,5 +23,4 @@ jobs:
           commit_message: "Update zipped resource pack"
           file_pattern: "SaltyMC.zip"
           branch: main
-          # If your repo requires a personal access token, add:
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
