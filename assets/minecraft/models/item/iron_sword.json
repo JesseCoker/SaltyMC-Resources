@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/iron_sword"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 98}, "model": "minecraft:item/emerald_sword"},
+    {"predicate": {"custom_model_data": 99}, "model": "minecraft:item/sidero_sword"},
+    {"predicate": {"custom_model_data": 100}, "model": "minecraft:item/hermes_sword"},
+    {"predicate": {"custom_model_data": 101}, "model": "minecraft:item/poison_sword"}
+  ]
+}

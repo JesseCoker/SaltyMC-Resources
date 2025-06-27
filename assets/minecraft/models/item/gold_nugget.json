@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/gold_nugget"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 98}, "model": "minecraft:item/ancient_handle"},
+    {"predicate": {"custom_model_data": 99}, "model": "minecraft:item/nether_crossguard_piece"},
+    {"predicate": {"custom_model_data": 100}, "model": "minecraft:item/skulk_crossguard_piece"},
+    {"predicate": {"custom_model_data": 101}, "model": "minecraft:item/ancient_crossguard"},
+    {"predicate": {"custom_model_data": 102}, "model": "minecraft:item/ancient_blade"},
+    {"predicate": {"custom_model_data": 103}, "model": "minecraft:item/despised_soul_fragment"},
+    {"predicate": {"custom_model_data": 104}, "model": "minecraft:item/pure_soul"}
+  ]
+}

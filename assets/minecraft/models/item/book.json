@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/book"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 98}, "model": "minecraft:item/ancient_spell"},
+    {"predicate": {"custom_model_data": 99}, "model": "minecraft:item/curse"}
+  ]
+}
